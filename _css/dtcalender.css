@@ -1,0 +1,47 @@
+.dtcalender {
+	width:180px;
+	float:left;
+	margin:8px;
+	border-collapse:collapse;
+	background-color: #EAEAEA;
+}
+.dtcalender td {
+	border:1px solid #fff;
+	padding:8px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	text-align: center;
+}
+.dtcalender td:hover {
+	background-color:#8DB7CF;
+}
+.dtcalender td a {
+	color:#333;
+	height: 15px;
+	width: 15px;
+	display: block;
+}
+.dtcalender th {
+	padding:5px;
+	color:#FFF;
+	text-align: center;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	background-color: #5292B5;
+}
+
+.actday{
+	font-weight:bold;
+	background-color: #8DB7CF;
+	color: #FFF;
+}
+.days {
+	background-color: #8DB7CF;
+}
+.event {
+	color:#8DB7CF;
+	background-image: url(../_images/reminder.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}

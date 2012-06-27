@@ -1,0 +1,11 @@
+Database name	db341443842
+Host name	db2611.perfora.net
+Port	3306
+User name	dbo341443842
+Description	booking system
+Version 	MySQL5.0
+Status	setup started 
+
+FTP
+u48767215-booking
+123456789

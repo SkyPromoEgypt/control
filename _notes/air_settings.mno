@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="airDestinationFolder" value="C:\wamp\www\control" />
+	<infoitem key="airDestinationFileName" value="HotelSoftware.air" />
+	<infoitem key="airChosenCert" value="C:\wamp\www\control\news.p12" />
+	<infoitem key="airPackageType" value="packageAIR" />
+	<infoitem key="airRememberPassword" value="true" />
+	<infoitem key="airFilesList" value="_ajax/news.php#_js/lib/core.js#_js/newticker.js" />
+	<infoitem key="airFullFilesList" value="news.html#_ajax/news.php#_js/lib/core.js#_js/newticker.js" />
+</info>

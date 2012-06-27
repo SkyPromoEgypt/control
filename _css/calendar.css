@@ -1,0 +1,67 @@
+.calendar-box {
+	display:none;
+	background-color:#fff;
+	border:1px solid #999;
+	position:absolute;
+	width:180px;
+	padding: 5px;
+	z-index: 3900;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #333;
+}
+.calendar-box select.calendar-month {
+	width:60px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #333;
+	padding: 2px;
+	border: 1px solid #CCC;
+	margin-top: 2px;
+	margin-right: 8px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.calendar-box select.calendar-year {
+	width:50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #333;
+	padding: 2px;
+	border: 1px solid #CCC;
+	margin-top: 2px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+.calendar-box .calendar-cancel {
+	width:100%;
+	margin-top: 5px;
+	border: 1px solid #CCC;
+}
+.calendar-box table td {
+	text-align:center;
+	width:10%;
+	background-color: #E9E9E9;
+	color: #900;
+	padding: 1px;
+}
+.calendar-box table td:hover {
+	background-color:#FFD5D5;
+	color: #FFF;
+}
+.calendar-box a:link, .calendar-box a:visited {
+	text-decoration:none;
+	display: block;
+	height: 100%;
+	width: 100%;
+	color: #333;
+}
+.calendar-box .today a {
+	background-color:#06C;
+	color: #FFF;
+} 
+.calendar-box .selected a {
+	background-color:#900;
+	color: #FFF;
+}

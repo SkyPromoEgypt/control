@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+#systemOverlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 4500;
+	visibility: hidden;
+}
+#systemAlert {
+	width: 289px;
+	overflow: hidden;
+	position: absolute;
+	left: 210px;
+	top: 106px;
+	background-color: #F7F7F7;
+	border: 5px solid #999;
+	padding: 15px;
+	z-index: 4501;
+	visibility: hidden;
+}
+#alertImg {
+	float: left;
+	margin-right: 20px;
+	height: 50px;
+	width: 50px;
+}
+#alertMsg  {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #900;
+	width: 200px;
+}
+#alertConfirm {
+	clear: both;
+	padding-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}
+#alertConfirm a:link, #alertConfirm a:visited {
+	display: block;
+	height: 15px;
+	border: 1px solid #999;
+	width: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	background-color: #E8E8E8;
+	color: #666;
+	font-size: 0.75em;
+	padding: 3px;
+	text-align: center;
+	font-weight: bold;
+	margin-right: 10px;
+	margin-left: 10px;
+	float: left;
+}
+#alertConfirm a:active, #alertConfirm a:hover {
+	background-color: #0B478A;
+	color: #FFF;
+}

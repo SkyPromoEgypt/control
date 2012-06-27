@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+				margin: 0px;
+				padding: 0px;
+				background-color: #FFF;
+			}
+			
+			p {
+				color:#666;
+				font-family:Tahoma, Geneva, sans-serif;
+				font-size:0.75em;
+			}
+			h1 {
+				font-family: Tahoma, Geneva, sans-serif;
+				color: #990;
+				font-size: 1.5em;
+				padding: 0px;
+				margin-top: 0px;
+				margin-right: 0px;
+				margin-bottom: 15px;
+				margin-left: 0px;
+			}
+			h2 {
+				font-family: Tahoma, Geneva, sans-serif;
+				font-size: 0.8em;
+				color: #033;
+				text-decoration: underline;
+				padding: 0px;
+				margin-top: 0px;
+				margin-right: 0px;
+				margin-bottom: 5px;
+				margin-left: 0px;
+			}
+			table {
+				border-collapse: collapse;
+			}
+			td {
+			}
+			#results {
+				padding: 10px;
+			}
+			#results table {
+				width: 500px;
+			}
+			
+			#results table td {
+				border: 1px solid #CCC;
+				padding: 4px;
+				font-family: Tahoma, Geneva, sans-serif;
+				font-size: 0.75em;
+				color: #09F;
+				background-color: #F3F3F3;
+				width: 250px;
+			}
+			#results table th {
+				text-align: left;
+				background-color: #E9E9E9;
+				color: #930;
+				width: 150px;
+				font-family: Tahoma, Geneva, sans-serif;
+				font-size: 0.75em;
+				font-weight: normal;
+				padding: 4px;
+				border: 1px solid #CCC;
+			}

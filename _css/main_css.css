@@ -1,0 +1,1779 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+
+Ocean Club Resort website CSS 
+Designed and published by: Eng. Mohammed Yehia Abdul Mottalib 
+Powered by http://www.dahabtech.com
+
+
+*/
+
+
+
+/* - - - - Browser Reset - - - - */
+/* - - - - This is to avoid browser settings overriding - - - - */
+/* - - - -  Put all your setting in here - - - - */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+a, img {
+	border:0; 
+	outline:none;
+}
+
+ol,ul {
+
+}
+
+h1,h2,h3,h4,h5,h6,p { 
+font-size: 100%; 
+font-weight:normal; 
+}
+p {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+}
+h1 {
+
+}
+h2 {
+	font-size: 1em;
+	font-weight: bold;
+	color: #623100;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0.2em;
+
+}
+
+body {
+	background-color: #3A84AB;
+	background-image: url(../_images/webback.jpg);
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+
+q:before,q:after { 
+content:''; 
+}
+
+abbr,acronym { 
+border:0; 
+}
+
+:link,:visited {
+	text-decoration:none;
+	color: #CC6;
+}
+.tooltipcss {
+	font-size:0.75em;
+	display: block;
+	left: 0.8em;
+	position: absolute;
+	top: 0.8em;
+	text-align:left;
+	color: #333;
+	font-weight: normal;
+	padding: 8px;
+	background-color: #FFFFE8;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid #999;
+}
+.contextMenu {
+	background-color:#F2F0EE;
+	width:120px;
+	position:absolute;
+	margin: 0px;
+	padding: 3px;
+	display: block;
+	list-style-type: none;
+	border: 2px solid #CACACA;
+}
+.contextMenu li a:link, .contextMenu li a:visited {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	text-decoration: none;
+	color: #333;
+	width: 114px;
+	padding: 3px;
+}
+.contextMenu li a:active, .contextMenu li a:hover {
+	background-color: #C4DAFB;
+}
+.contextMenu li a img {
+	margin-right:3px;
+}
+.custominputbox {
+	width: 40px;
+	border: 1px solid #999;
+	padding: 2px;
+	color: #06F;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+.blue {
+	color: #6A4800;
+}
+.menutitle {
+	color: #039;
+}
+
+.red {
+	font-weight: bold;
+	color: #900;
+}
+.orange {
+	color: #A86500;
+}
+
+
+.roomtype {
+	font-weight: bold;
+	color: #900;
+}
+.customlist {
+	width: 110px;
+	border: 1px solid #CCC;
+	background-color: #206699;
+	padding: 2px;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.customtextarea {
+	width: 355px;
+	border: 1px solid #999;
+	padding: 2px;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+a.booked {
+	display:block;
+	width:180px;
+	background-color:#D5FFD5;
+	color:#006A00;
+	background-image: url(../_images/booked.jpg);
+	height: 18px;
+	padding-top: 7px;
+	outline:none;
+}
+a.booked:hover {
+	background-image: url(../_images/booked_mo.jpg);
+}
+a.closed {
+	display:block;
+	width:180px;
+	background-color:#FFC;
+	color:#6F5602;
+	background-image: url(../_images/closed.jpg);
+	height: 18px;
+	padding-top: 7px;
+	outline:none;
+}
+a.closed:hover {
+	background-image: url(../_images/closed_mo.jpg);
+}
+a.notbooked {
+	display:block;
+	width:180px;
+	background-color:#B3E0FF;
+	color:#182E38;
+	background-image: url(../_images/notbooked.jpg);
+	height: 18px;
+	padding-top: 7px;
+	outline:none;
+}
+a.notbooked:hover {
+	background-image: url(../_images/notbooked_mo.jpg);
+}
+.message {
+	color: #900;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+.styleresults{
+	color:#F30;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+}
+.stylestatistics {
+	color:#333;
+	font-size:12px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+.hidden {
+	display: none;
+}
+.width {
+	width: 150px;
+}
+.fieldsetwidth {
+	width: 400px;
+	height: 150px;
+
+}
+.fieldsetwidth2 {
+	width: 350px;
+	height: 150px;
+
+}
+.fieldsetwidth3 {
+	width: 777px;
+}
+
+
+.clear {
+	clear: both;
+	width: 350px;
+}
+#wrraper {
+	height: 100%;
+	width: 100%;
+	overflow: visible;
+	margin-top: 170px;
+	position: relative;
+}
+#overlay {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 4000;
+	top: 0px;
+	visibility: hidden;
+	background-image: url(../_images/loginBG.jpg);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: 75% center;
+}
+#frmUnlock {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding: 10px;
+	height: 170px;
+	width: 350px;
+	z-index: 3000;
+	text-align: center;
+	background-image: url(../_images/unlockfrmBG.png);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#unlockpass {
+	width: 315px;
+	height: 25px;
+	border: 1px solid #FFF;
+	margin-bottom: 10px;
+}
+#unlock {
+	width: 92%;
+}
+
+
+#frmUnlock p {
+	color: #333;
+}
+#unlockLoading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #FFF;
+	margin-top: 5px;
+}
+
+
+
+#feedback {
+	width: 1032px;
+	background-image: url(../_images/newbookingfromBG.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 730px;
+	visibility: hidden;
+	position: absolute;
+	z-index: 1500;
+	padding-top: 65px;
+	padding-right: 35px;
+	padding-bottom: 35px;
+	padding-left: 35px;
+}
+#feedbackClosebtn {
+	position: absolute;
+	height: 24px;
+	width: 50px;
+	left: 952px;
+	top: 15px;
+	background-image: url(../_images/closeWindow.png);
+}
+#feedbackClosebtn:hover {
+	background-image: url(../_images/closeWindow.png);
+	background-position: 0px -24px;
+}
+
+#chart {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#chart td {
+	height: 25px;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.75em;
+	color: #FFF;
+}
+
+#chart th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	height: 25px;
+	color: #003C77;
+	background-color: #BFDBFF;
+	text-align: center;
+	width: 180px;
+	background-image: url(../_images/thBG.jpg);
+}
+#chart tr:hover {
+	background-color:#900;
+}
+#frmbooking {
+
+}
+
+#frmbooking fieldset {
+	border: 1px solid #333;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+#frmbooking  .label{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	color: #333;
+}
+#frmbooking .input {
+	border: 1px solid #999;
+	color: #06F;
+	padding: 2px;
+	width: 240px;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+}
+
+#frmbooking .dropdown {
+	border: 1px solid #999;
+	color: #06F;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bolder;
+}
+
+#frmbooking legend {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #900;
+	letter-spacing: 0.1em;
+	border: 1px solid #333;
+	padding: 2px;
+}
+
+#frmbooking .notes {
+	color: #333;
+	width: 320px;
+	border: 1px solid #999;
+	height: 100px;
+}
+
+
+#submit {
+	border: 1px solid #999;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 3px;
+}
+#frmactivities .dropdown {
+	border: 1px solid #999;
+	color: #06F;
+	padding: 2px;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .75em;
+	background-color: #FFF;
+	float: none;
+}
+#frmactivities {
+	visibility: hidden;
+	padding: 5px;
+}
+#frmactivities .input {
+	border: 1px solid #999;
+	color: #06F;
+	padding: 2px;
+	width: 240px;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+}
+
+#frmactivities  .label{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+#frmactivities fieldset {
+	border: 1px solid #333;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#frmactivities legend {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #900;
+	letter-spacing: 0.1em;
+	border: 1px solid #333;
+	padding: 2px;
+}
+#activitiesResults a {
+	color: #900;
+	text-decoration: none;
+}
+
+#submitActivity {
+	border: 1px solid #999;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 3px;
+}
+#editservice {
+	visibility: hidden;
+}
+#editservicesubmit {
+	border: 1px solid #999;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 3px;
+}
+
+#loginSubmit {
+	border: 1px solid #4888AA;
+	background-color: #B1CEDE;
+	color: #333;
+	width: 80px;
+	height: 30px;
+	outline:none;
+}
+#loginSubmit:hover {
+	background-color:#396B86;
+	color: #FFF;
+	outline:none;
+}
+
+#loadingMSG {
+	color: #039;
+	display: block;
+	position: absolute;
+	left: 91%;
+	top: 23%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+#loadingMSG img {
+	margin-right: 5px;
+
+}
+#loadingBox {
+	position: fixed;
+	background-image: url(../_images/mainLoading.png);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 77px;
+	width: 230px;
+	z-index: 3850;
+	display: none;
+	padding-top: 45px;
+	padding-left: 5px;
+}
+
+
+
+#deleteRecord {
+	display: block;
+	position: absolute;
+	left: 859px;
+	top: 72px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.75em;
+	color: #333;
+	text-decoration: none;
+}
+#showServices {
+	display: block;
+	position: absolute;
+	left: 859px;
+	top: 105px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #333;
+	text-decoration: none;
+}
+#openBooking {
+	display: block;
+	position: absolute;
+	left: 859px;
+	top: 138px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #333;
+	text-decoration: none;
+}
+#bookedBy {
+	position: absolute;
+	left: 858px;
+	top: 171px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #900;
+}
+#data {
+	position: relative;
+}
+
+
+
+#controls {
+	position: absolute;
+	left: 305px;
+	top: 15px;
+	width: 1000px;
+}
+#exOverlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 3800;
+	top: 0px;
+	display: none;
+}
+
+#extend {
+	position: fixed;
+	height: 173px;
+	width: 371px;
+	z-index: 3850;
+	background-attachment: scroll;
+	background-image: url(../_images/extendBG.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	top: -178px;
+}
+#extX {
+	background-image: url(../_images/closeX.png);
+	display: block;
+	height: 9px;
+	width: 9px;
+	position: absolute;
+	top:13px;
+	z-index: 3600;
+	left: 350px;
+}
+#exDates {
+	height: 160px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#exDates .input {
+	border: 1px solid #999;
+	color: #06F;
+	padding: 2px;
+	width: 150px;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+}
+#exLoading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+}
+
+
+#availability {
+	height: 220px;
+	width: 100%;
+	position: fixed;
+	bottom: -260px;
+	z-index: 3500;
+	background-color: #C2D8E5;
+	border: 1px solid #91B2DD;
+	background-image: url(../_images/mainMenuTitleBg.jpg);
+	background-position: left top;
+	background-repeat: repeat-x;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+#avX {
+	background-image: url(../_images/closeX.png);
+	display: block;
+	height: 9px;
+	width: 9px;
+	position: absolute;
+	left: 96%;
+	top:5%;
+	z-index: 3600;
+}
+#avDates {
+	width: 400px;
+	float: left;
+	background-image: url(../_images/availabilityBG.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	height: 225px;
+}
+#avDates .input {
+	border: 1px solid #999;
+	color: #06F;
+	padding: 2px;
+	width: 150px;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+}
+#avDates .dropdown {
+	border: 1px solid #999;
+	color: #06F;
+	padding: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bolder;
+}
+#avResults {
+	float: right;
+	overflow: auto;
+	height: 230px;
+	width: 650px;
+	background-image: url(../_images/CALENDAR%20ICON.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	padding-right: 25px;
+}
+.avRooms {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: #FFF;
+	color: #900;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	border: 1px solid #CCC;
+	height: 20px;
+	width: 20px;
+	padding-top: 6px;
+	padding-right: 6px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+}
+
+
+#wrraper #chkAvContainer {
+	width: 550px;
+	float: left;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+#wrraper #checkAvailability {
+	width: 500px;
+	margin-left: 20px;
+}
+
+#wrraper #checkAvailability label {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+
+#wrraper #checkAvailability .input {
+	width: 150px;
+	border: 1px solid #999;
+	color: #06F;
+	font-weight: bold;
+	padding: 5px;
+}
+
+#wrraper #checkAvailability .dropdown{
+	border: 1px solid #999;
+	color: #333;
+	padding: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+
+#wrraper #checkAvailability #checkAvBtn {
+	border: 1px solid #999;
+	padding: 5px;
+	background-color: #D8E7EE;
+}
+#wrraper #checkAvailability #checkAvBtn:hover {
+	background-color:#069;
+	color:#FFF;
+}
+#wrraper #checkAvailability a {
+	color: #2E5369;
+	text-decoration: underline;
+}
+
+#wrraper #bookingData {
+	width: 500px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.availableResults {
+	margin-bottom:5px;
+	padding:7px;
+	border:solid 1px #999;
+	background-color:#FFF;
+}
+.availableResults a:link , .availableResults a:visited {
+	color: #900;
+	text-decoration: none;
+}
+.availableResults a:hover , .availableResults a:active {
+	text-decoration: underline;
+}
+#wrraper #bkformContainer {
+	float: left;
+	visibility: hidden;
+	width: 550px;
+	margin-top: 30px;
+}
+#bookingStatus {
+	width: 450px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+#frmCustomerBooking label {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+
+#frmCustomerBooking fieldset {
+	border: 1px solid #999;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+	background-color: #FFF;
+}
+
+#frmCustomerBooking legend {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #333;
+	letter-spacing: 0.1em;
+	border: 1px solid #999;
+	padding: 2px;
+	background-color: #FFF;
+}
+
+#frmCustomerBooking .input {
+	width: 200px;
+	border: 1px solid #999;
+	color: #06F;
+	font-weight: bold;
+	padding: 3px;
+}
+
+#frmCustomerBooking .dropdown {
+	border: 1px solid #999;
+	color: #06F;
+	padding: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+#frmCustomerBooking .notes {
+	color: #333;
+	border: 1px solid #999;
+	width: 350px;
+	height: 100px;
+}
+#submitBooking {
+	border: 1px solid #999;
+	background-color: #06C;
+	color: #FFF;
+	padding: 3px;
+}
+#wrraper #checkinout {
+	width: 700px;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#wrraper h1  {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #900;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+#wrraper #checkinout #chkinoutresults {
+	border-collapse: collapse;
+}
+#wrraper #checkinout #chkinoutresults td {
+	padding: 5px;
+	border: 1px solid #333;
+	background-color: #F8F8F8;
+	font-size: 0.75em;
+	color: #06F;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 300px;
+}
+#wrraper #checkinout #chkinoutresults th {
+	background-color: #3A84AB;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #FFF;
+	border: 1px solid #333;
+}
+#wrraper #checkinout #chkinoutresults #recNotes p {
+	font-size: 1em;
+	color: #900;
+}
+#wrraper #checkinout #notes {
+	border: 1px solid #999;
+	width: 700px;
+	height: 100px;
+}
+#wrraper #searchbooking {
+	float: left;
+	width: 750px;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-image: url(../_images/searchBG.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 320px;
+	padding-top: 18px;
+	padding-right: 18px;
+	padding-left: 18px;
+}
+
+#wrraper #searchbooking label{
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+#wrraper #searchbooking .input{
+	width: 200px;
+	border: 1px solid #999;
+	color: #06F;
+	font-weight: bold;
+	padding: 3px;
+}
+#printBtn {
+	border: 1px solid #999;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 3px;
+}
+#searchRsults {
+	margin-top: 50px;
+}
+#wrraper #bookingDetails {
+	width: 400px;
+	float: left;
+	margin-left: 20px;
+	background-color: #FFF;
+	border: 1px solid #999;
+	visibility: hidden;
+	height: 100%;
+	padding: 10px;
+	margin-top: 20px;
+}
+#wrraper #checkoutguest {
+	float:left;
+	margin-top: 30px;
+}
+#wrraper .table  {
+	border-collapse: collapse;
+}
+#wrraper .table a  {
+	color: #900;
+	text-decoration: none;
+}
+#wrraper .table td  {
+	padding: 5px;
+	border: 1px solid #333;
+	background-color: #F8F8F8;
+	font-size: 0.75em;
+	color: #06F;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#wrraper .table th  {
+	background-color: #3A84AB;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #FFF;
+	border: 1px solid #333;
+}
+#wrraper #bill {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 10px;
+	float: left;
+	margin-top: 30px;
+	width: 810px;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+
+#bill fieldset {
+	border: 1px solid #999;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+	background-color: #FFF;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#bill legend {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #900;
+	letter-spacing: 0.1em;
+	border: 1px solid #999;
+	padding: 2px;
+	background-color: #FFF;
+}
+#bill label {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+#wrraper #settingsContainer {
+	float: left;
+	width: 1000px;
+	margin-top: 30px;
+	margin-left: 30px;
+	background-color: #F2F2F2;
+	padding: 10px;
+	border: 1px solid #CCC;
+	position: relative;
+}
+#settingsTabs {
+	position: absolute;
+	height: 150px;
+	right: -62px;
+	width: 62px;
+}
+#settingsTabs a {
+	margin-bottom: 5px;
+}
+
+#settingsTabs #generaltab:link, #settingsTabs #generaltab:visited {
+	background-image: url(../_images/general.png);
+	display: block;
+	height: 52px;
+	width: 62px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#settingsTabs #generaltab:hover {
+	background-image: url(../_images/generalmo.png);
+}
+#settingsTabs #generaltab.active {
+	background-image: url(../_images/generalmo.png);
+}
+#settingsTabs #roomtab:link, #settingsTabs #roomtab:visited {
+	background-image: url(../_images/roomtab.png);
+	display: block;
+	height: 52px;
+	width: 62px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#settingsTabs #roomtab:hover {
+	background-image: url(../_images/roomtabmo.png);
+}
+#settingsTabs #roomtab.active {
+	background-image: url(../_images/roomtabmo.png);
+}
+#settingsTabs #acttab:link, #settingsTabs #acttab:visited {
+	background-image: url(../_images/act.png);
+	display: block;
+	height: 52px;
+	width: 62px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#settingsTabs #acttab:hover {
+	background-image: url(../_images/actmo.png);
+}
+#settingsTabs #acttab.active {
+	background-image: url(../_images/actmo.png);
+}
+#settingsTabs #usertab:link, #settingsTabs #usertab:visited {
+	background-image: url(../_images/user.png);
+	display: block;
+	height: 52px;
+	width: 62px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#settingsTabs #usertab:hover {
+	background-image: url(../_images/usermo.png);
+}
+#settingsTabs #usertab.active {
+	background-image: url(../_images/usermo.png);
+}
+#generalSettings {
+	padding: 10px;
+	overflow: hidden;
+	border: 1px dashed #999;
+}
+#generalControls {
+	float: left;
+	width: 500px;
+}
+#generalControls table tr td label {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+#generalControls table tr td .dropdown{
+	border: 1px solid #999;
+	color: #06F;
+	padding: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+#roomSettings {
+	padding: 10px;
+	overflow: hidden;
+	border: 1px dashed #999;
+}
+#roomList {
+	background-color: #B4D0E0;
+	padding: 5px;
+	border: 1px dashed #427C9F;
+	overflow: hidden;
+	float: left;
+	width: 450px;
+}
+#roomList .roomitem {
+	display: block;
+	padding: 4px;
+	color: #900;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	text-decoration: none;
+	float: left;
+	margin: 5px;
+}
+#roomList .roomitem:hover {
+	color: #FFF;
+	background-color: #900;
+}
+#roomControls {
+	float: left;
+	width: 500px;
+}
+#roomControls table tr td label {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+#roomControls table tr td .dropdown{
+	border: 1px solid #999;
+	color: #06F;
+	padding: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+#typelist {
+	background-color: #B4D0E0;
+	padding: 5px;
+	border: 1px dashed #427C9F;
+	overflow: hidden;
+	float: left;
+	width: 450px;
+}
+#typelist a:link , #typelist a:visited{
+	display: block;
+	padding: 4px;
+	color: #900;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	text-decoration: none;
+	float: left;
+	margin: 5px;
+}
+#typelist a:active, #typelist a:hover{
+	color: #FFF;
+	background-color: #900;
+}
+#typecontrol {
+	float: left;
+	width: 500px;
+}
+#typecontrol table tr td label {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+#typecontrol table tr td .input {
+	width: 200px;
+	height: 18px;
+	border: 1px solid #999;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #06F;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 3px;
+}
+#catlist {
+	background-color: #B4D0E0;
+	padding: 5px;
+	border: 1px dashed #427C9F;
+	overflow: hidden;
+	float: left;
+	width: 450px;
+}
+#catlist a:link , #catlist a:visited{
+	display: block;
+	padding: 4px;
+	color: #900;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	text-decoration: none;
+	float: left;
+	margin: 5px;
+}
+#catlist a:active , #catlist a:hover{
+	color: #FFF;
+	background-color: #900;
+}
+#catcontrol {
+	float: left;
+	width: 500px;
+}
+#catcontrol table tr td label {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+#catcontrol table tr td .input {
+	width: 200px;
+	height: 18px;
+	border: 1px solid #999;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #06F;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 3px;
+}
+#actSettings {
+	padding: 10px;
+	overflow: hidden;
+	border: 1px dashed #999;
+}
+#actControls {
+	float: left;
+	width: 950px;
+}
+#actControls table tr td label {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+#actControls table tr td .input {
+	width: 200px;
+	height: 18px;
+	border: 1px solid #999;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #06F;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 3px;
+}
+#actlist {
+	background-color: #B4D0E0;
+	padding: 5px;
+	border: 1px dashed #427C9F;
+	overflow: hidden;
+	float: left;
+	width: 950px;
+}
+#actlist a:link , #actlist a:visited{
+	display: block;
+	padding: 4px;
+	color: #900;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	text-decoration: none;
+	float: left;
+	margin: 5px;
+}
+#actlist a:active , #actlist a:hover{
+	color: #FFF;
+	background-color: #900;
+}
+#userSettings {
+	padding: 10px;
+	overflow: hidden;
+	border: 1px dashed #999;
+}
+#userControls {
+	float: left;
+	width: 500px;
+}
+#userControls table tr td label {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+#userControls table tr td .input {
+	width: 200px;
+	height: 18px;
+	border: 1px solid #999;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #06F;
+	font-size: 0.8em;
+	font-weight: bold;
+	padding: 3px;
+}
+#userControls table tr td .dropdown{
+	border: 1px solid #999;
+	color: #06F;
+	padding: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+#userlist {
+	background-color: #B4D0E0;
+	padding: 5px;
+	border: 1px dashed #427C9F;
+	overflow: hidden;
+	float: left;
+	width: 450px;
+}
+#userlist a:link , #userlist a:visited{
+	display: block;
+	padding: 4px;
+	color: #900;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	text-decoration: none;
+	float: left;
+	margin: 5px;
+}
+#userlist a:active , #userlist a:hover{
+	color: #FFF;
+	background-color: #900;
+}
+#systeminbox {
+	overflow: hidden;
+	margin-left: 30px;
+	padding-top: 40px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#userinbox {
+	padding: 10px;
+	overflow: hidden;
+	border: 1px dashed #999;
+}
+#systememails {
+	float: left;
+	height: 420px;
+	width: 270px;
+	padding: 5px;
+	overflow: auto;
+	background-image: url(../_images/mailboxBG.png);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: right top;
+}
+.email {
+	width: 227px;
+	background-image: url(../_images/emailBG.png);
+	height: 31px;
+	display: block;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #003264;
+	font-size: 0.75em;
+	padding-top: 13px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 18px;
+	margin-bottom: 2px;
+	outline: none;
+}
+.email:hover {
+	background-image: url(../_images/emailBG_mo.png);
+	outline: none;
+}
+.emailread {
+	width: 227px;
+	background-image: url(../_images/emailreadBG.png);
+	height: 31px;
+	display: block;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #003264;
+	font-size: 0.75em;
+	padding-top: 13px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 18px;
+	margin-bottom: 2px;
+	outline: none;
+}
+.emailread:hover {
+	background-image: url(../_images/emailreadBG_mo.png);
+	outline: none;
+}
+.emailControl {
+	padding: 5px;
+	border: 1px dashed #CCC;
+}
+.emailControl a:link, .emailControl a:visited {
+	color: #900;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+.emailControl a:active, .emailControl a:hover {
+	text-decoration: underline;
+}
+#sysreadpanel {
+	float: left;
+	margin-left: 5px;
+	width: 640px;
+	padding: 10px;
+	height: 410px;
+	overflow: auto;
+}
+#liveSupport {
+	position: fixed;
+	bottom: 0px;
+	border: 1px solid #98C9FE;
+	width: 250px;
+	z-index: 3400;
+	right: 0px;
+	display: none;
+}
+#onoff {
+	background-color: #CCC;
+	height: 17px;
+	width: 243px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #06C;
+	padding-top: 7px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	background-image: url(../_images/livesupportbg.jpg);
+	cursor:pointer;
+}
+#onoff:hover {
+	background-image: url(../_images/livesupportbgmo.jpg);
+}
+#onoff img {
+	margin-top: -3px;
+	margin-right: 5px;
+}
+#msgContainer {
+	overflow: hidden;
+	position: relative;
+}
+
+#chatmsg {
+	background-color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #333;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: 218px;
+	border-top-color: #98C9FE;
+	border-bottom-color: #98C9FE;
+	background-image: url(../_images/typing.png);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+#returnmsg {
+	background-color: #FFF;
+	padding: 5px;
+	height: 178px;
+	width: 240px;
+	overflow: auto;
+}
+#returnmsg p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #333;
+}.chatclass {
+	color: #900;
+}
+#liveSupport2 {
+	position: fixed;
+	bottom: 0px;
+	border: 1px solid #98C9FE;
+	width: 250px;
+	z-index: 3400;
+	right: 0px;
+}
+#onoff2 {
+	background-color: #CCC;
+	height: 17px;
+	width: 243px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #06C;
+	padding-top: 7px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	background-image: url(../_images/livesupportbg.jpg);
+	cursor:pointer;
+}
+#onoff2:hover {
+	background-image: url(../_images/livesupportbgmo.jpg);
+}
+#onoff2 img {
+	margin-top: -3px;
+	margin-right: 5px;
+}
+#msgContainer2 {
+	overflow: hidden;
+	position: relative;
+}
+
+#chatmsg2 {
+	background-color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #333;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: 218px;
+	border-top-color: #98C9FE;
+	border-bottom-color: #98C9FE;
+	background-image: url(../_images/typing.png);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 25px;
+}
+#returnmsg2 {
+	background-color: #FFF;
+	padding: 5px;
+	height: 178px;
+	width: 240px;
+	overflow: auto;
+}
+#returnmsg2 p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #333;
+}
+.chatclass2  {
+	color:#093;
+}
+#allDBRecords {
+	width: 900px;
+	float: left;
+}
+#recordsNav {
+	padding: 3px;
+	overflow: auto;
+	height: 25px;
+	width: 900px;
+	display: none;
+}
+#recordsNav a:link, #recordsNav a:visited {
+	display: block;
+	float: left;
+	background-color: #F7F7F7;
+	border: 1px solid #E6E6E6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #900;
+	margin-right: 5px;
+	text-decoration: none;
+	padding: 3px;
+}
+#recordsNav a:active, #recordsNav a:hover {
+	background-color: #900;
+	color: #FFF;
+}
+#recordsNav a.active {
+	background-color: #900;
+	color: #FFF;
+}
+.cusTable {
+	border-collapse: collapse;
+}
+.cusTable td {
+	border: 1px solid #CCC;
+	padding: 4px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 0.75em;
+	color: #09F;
+	background-color: #F3F3F3;
+	width: 250px;
+}
+.cusTable th {
+	text-align: left;
+	background-color: #E9E9E9;
+	color: #930;
+	width: 150px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 0.75em;
+	font-weight: normal;
+	padding: 4px;
+	border: 1px solid #CCC;
+}
+#monthView {
+	float: left;
+	width: 250px;
+	margin-right: 25px;
+}
+.reminderBG {
+	background-image: url(../_images/reminderBG.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.requestBG {
+	background-image: url(../_images/requestBG.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+
+#reminderView {
+	padding: 10px;
+	width: 705px;
+	float: left;
+	overflow: hidden;
+	height: 250px;
+}
+#reminderView #tblReminder {
+	float: left;
+	height: 230px;
+	overflow: auto;
+}
+#reminderView #tblReminderControl {
+	float: right;
+	margin-left: 10px;
+}
+#tblReminderControl label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #333;
+}
+#reminderDetails {
+	width: 320px;
+}
+#grRoomNumber {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-weight: bold;
+	color: #900;
+}
+
+
+
+#remText {
+	border: 1px solid #CCC;
+	width: 240px;
+	height: 80px;
+	padding: 5px;
+}
+#remDate {
+	border: 1px solid #CCC;
+	padding: 5px;
+}
+.remItem {
+	border: 1px solid #CCC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #900;
+	margin-bottom: 2px;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	display: block;
+	background-color: #FFF;
+}
+.remItem:hover {
+	background-color:#900;
+	color: #FFF;
+	cursor:pointer;
+}
+
+#roomsView {
+	float: left;
+	width: 300px;
+	margin-right: 5px;
+}
+.tblroomItem {
+	display: block;
+	margin: 3px;
+	float: left;
+	background-color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	color: #900;
+	padding: 5px;
+	border: 1px solid #CCC;
+}
+.tblroomItem:hover {
+	background-color: #900;
+	color: #FFF;
+}
+.roomReq {
+	background-image: url(../_images/request.png);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color:#333;
+}
+.roomReq:hover {
+	background-image: url(../_images/request.png);
+	background-color:#FFF;
+	color:#333;
+}
+#print {
+	background-color: #FFF;
+	padding: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -150px;
+	width: 810px;
+}
+#print fieldset {
+	border: 1px solid #999;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+	background-color: #FFF;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#print legend {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #900;
+	letter-spacing: 0.1em;
+	border: 1px solid #999;
+	padding: 2px;
+	background-color: #FFF;
+}
+#print label {
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+#allRoomsStats {
+	width: 500px;
+	float: left;
+	margin-right: 15px;
+}
+.roomStatItem {
+	display: block;
+	margin: 3px;
+	float: left;
+	background-color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #900;
+	padding: 5px;
+	border: 1px solid #CCC;
+}
+.roomStatItem:hover {
+	background-color: #900;
+	color: #FFF;
+}#allRoomsStatsBooking {
+	float: left;
+	width: 450px;
+	background-color: #FFF;
+	padding: 10px;
+	border: 1px solid #999;
+}

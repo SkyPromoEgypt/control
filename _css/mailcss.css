@@ -1,0 +1,29 @@
+@charset "utf-8";
+			#results {
+				padding: 10px;
+			}
+			#results table {
+	width: 500px;
+	border-collapse: collapse;
+			}
+			
+			#results table td {
+				border: 1px solid #CCC;
+				padding: 4px;
+				font-family: Tahoma, Geneva, sans-serif;
+				font-size: 0.75em;
+				color: #09F;
+				background-color: #F3F3F3;
+				width: 250px;
+			}
+			#results table th {
+				text-align: left;
+				background-color: #E9E9E9;
+				color: #930;
+				width: 150px;
+				font-family: Tahoma, Geneva, sans-serif;
+				font-size: 0.75em;
+				font-weight: normal;
+				padding: 4px;
+				border: 1px solid #CCC;
+			}
